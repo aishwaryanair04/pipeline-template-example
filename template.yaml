@@ -7,6 +7,5 @@ maintainer: foo@bar.com
 config:
     jobs:
         main:
-            image: docker.ouroath.com:4443/docker.io/node:18
             steps:
               - printLine: echo "Testing template creation V3"
