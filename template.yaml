@@ -1,12 +1,13 @@
 namespace: myNamespace
-name: template_name
+name: templateName
 version: '1.3.2'
 description: template for testing
 maintainer: foo@bar.com
 
 config:
     jobs:
-        main:
-            image: docker.ouroath.com:4443/docker.io/node:18
-            steps:
-              - printLine: echo "Testing template creation V3"
+        component:
+        image: docker.ouroath.com:4443/docker.io/node:18
+        requires: [~commit]
+        steps:
+            - step-1: echo "Testing pipeline templates"
