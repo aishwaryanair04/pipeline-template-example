@@ -5,7 +5,8 @@ description: template for testing
 maintainer: foo@bar.com
 
 config:
-    main:
-        image: docker.ouroath.com:4443/docker.io/node:18
-        steps:
-            - printLine: echo "Testing pipeline templates"
+    jobs:
+        main:
+            image: docker.ouroath.com:4443/docker.io/node:18
+            steps:
+                - printLine: echo "Testing pipeline templates"
