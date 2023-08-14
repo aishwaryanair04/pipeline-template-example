@@ -9,4 +9,4 @@ config:
         main:
             image: docker.ouroath.com:4443/docker.io/node:18
             steps:
-                - printLine: echo "Testing validation of pipeline templates"
+                - printLine: echo "Test for validation of pipeline templates"
