@@ -9,7 +9,7 @@ jobs:
       - install_prerequisites: npm install -g screwdriver-template-main
       - validate_template: pipeline-template-validate
 
-   publish_template:
+  publish_template:
     requires: [validate_template]
     steps:
       - install_prerequisites: npm install -g screwdriver-template-main
